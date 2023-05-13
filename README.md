@@ -8,8 +8,14 @@ instalação de modulos com yarn - yarn add -
     express-async-errors
     cors
     @types/cors -D
+    prisma
+    @prisma/client
     
 
 inicialização do typescript
     yarn tsc --init
+
+inicializaçao do prisma
+    após instalar ele 
+    npx prisma init
 
