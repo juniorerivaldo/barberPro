@@ -19,3 +19,6 @@ inicializaçao do prisma
     após instalar ele 
     npx prisma init
 
+criando migration inicial
+    yarn prisma migrate dev
+
