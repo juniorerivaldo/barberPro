@@ -10,7 +10,8 @@ instalação de modulos com yarn - yarn add -
     @types/cors -D
     prisma
     @prisma/client
-    
+    bcryptjs
+    @types/bcryptjs -D
 
 inicialização do typescript
     yarn tsc --init
