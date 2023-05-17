@@ -12,6 +12,9 @@ instalação de modulos com yarn - yarn add -
     @prisma/client
     bcryptjs
     @types/bcryptjs -D
+    jsonwebtoken
+    @types/jsonwebtoken -D
+
 
 inicialização do typescript
     yarn tsc --init
