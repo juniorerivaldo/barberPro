@@ -26,3 +26,6 @@ inicializaçao do prisma
 criando migration inicial
     yarn prisma migrate dev
 
+declarando types novos no tsconfig
+     "typeRoots": ["./src/@types"]
+
