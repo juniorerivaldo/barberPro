@@ -4,6 +4,7 @@ import { AuthUserController } from "./controllers/user/AuthUserController";
 import { DetailUserController } from "./controllers/user/DetailUserController";
 import { UpdateUserController } from "./controllers/user/UpdateUserController";
 import { CreateHairCutController } from "./controllers/haircut/CreateHairCutController";
+import { ListHairCutController } from "./controllers/haircut/ListHairCutController";
 
 // middlewares
 import { isAuthenticated } from "./middlewares/isAuthenticated";
@@ -18,5 +19,6 @@ router.put("/users", isAuthenticated, new UpdateUserController().handle);
 
 // rotas de haircut
 router.post("/haircut", isAuthenticated, new CreateHairCutController().handle);
+router.get("/haircuts", isAuthenticated, new ListHairCutController().handle);
 
 export { router };

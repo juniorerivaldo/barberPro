@@ -29,3 +29,6 @@ criando migration inicial
 declarando types novos no tsconfig
      "typeRoots": ["./src/@types"]
 
+
+OBS: podemos user o haircuts como pacientes
+
