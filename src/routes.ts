@@ -8,6 +8,7 @@ import { ListHairCutController } from "./controllers/haircut/ListHairCutControll
 import { UpdateHairCutController } from "./controllers/haircut/UpdateHairCutController";
 import { CheckSubscriptionController } from "./controllers/haircut/CheckSubscriptionController";
 import { CountHairCutController } from "./controllers/haircut/CountHairCutController";
+import { DetailHairCutController } from "./controllers/haircut/DetailHairCutController";
 
 // middlewares
 import { isAuthenticated } from "./middlewares/isAuthenticated";
@@ -26,5 +27,6 @@ router.get("/haircuts", isAuthenticated, new ListHairCutController().handle);
 router.put("/haircut", isAuthenticated, new UpdateHairCutController().handle);
 router.get('/haircut/check', isAuthenticated, new CheckSubscriptionController().handle);
 router.get('/haircut/count', isAuthenticated, new CountHairCutController().handle);
+router.get('/haircut/detail', isAuthenticated, new DetailHairCutController().handle);
 
 export { router };
