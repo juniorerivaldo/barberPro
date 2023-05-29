@@ -1,4 +1,4 @@
-##BACKEND
+##BACK-END
 
 instalação de modulos com yarn - yarn add -
     typescript -D
@@ -32,3 +32,10 @@ declarando types novos no tsconfig
 
 OBS: podemos user o haircuts como pacientes
 
+
+##FRONT-END
+
+instalação de modulos com yarn - yarn add -
+    axios
+    nookies
+    jwt-decode
