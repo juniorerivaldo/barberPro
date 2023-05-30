@@ -18,7 +18,7 @@ export function setupAPIClient(ctx = undefined) {
       return response;
     },
     (error: AxiosError) => {
-      if (error.response.status === 401) {
+      if (error.response.status === 400) {
         if (typeof window != undefined) {
           // deslogar o user
           signOut();
