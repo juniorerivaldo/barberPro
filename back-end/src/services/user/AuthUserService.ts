@@ -20,7 +20,7 @@ class AuthUserService {
       throw new Error("Email/password incorreto");
     }
     // verificar a senha se esta correta
-    const passwordMatch = await compare(password, user?.password); // o  serve para se não existir a propriedade o js não dar erro e retornar vazio
+    const passwordMatch = await compare(password, user?.password); // o ? serve para se não existir a propriedade o js não dar erro e retornar vazio
 
     if (!passwordMatch) {
       throw new Error("Email/password incorreto");
